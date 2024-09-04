@@ -2,6 +2,9 @@
   "name": "@se-2/hardhat",
   "version": "0.0.1",
   "scripts": {
+    "staking": "hardhat --network localhost run scripts/staking.ts",
+    "transfer-erc": "hardhat --network localhost run scripts/transferErc.ts",
+    "transfer": "hardhat --network localhost run scripts/transfer.ts",
     "account": "hardhat run scripts/listAccount.ts",
     "chain": "hardhat node --network hardhat --no-deploy",
     "compile": "hardhat compile",

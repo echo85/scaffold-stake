@@ -42,6 +42,7 @@ export const WriteOnlyFunctionForm = ({
   const { data: result, isPending, writeContractAsync } = useWriteContract();
 
   const handleWrite = async () => {
+    console.log(abiFunction.name);
     if (writeContractAsync) {
       try {
         const makeWriteWithParams = () =>

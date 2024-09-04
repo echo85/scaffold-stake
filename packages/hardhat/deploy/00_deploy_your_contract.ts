@@ -20,9 +20,9 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
     You can run the `yarn account` command to check your balance in every network.
   */
   const { deployer } = await hre.getNamedAccounts();
-  const { deploy } = hre.deployments;
+  /*const { deploy } = hre.deployments;
 
-  await deploy("YourContract", {
+  await deploy("SavingsDai", {
     from: deployer,
     // Contract constructor arguments
     args: [deployer],
@@ -34,7 +34,7 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
 
   // Get the deployed contract to interact with it after deploying.
   const yourContract = await hre.ethers.getContract<Contract>("YourContract", deployer);
-  console.log("👋 Initial greeting:", await yourContract.greeting());
+  console.log("👋 Initial greeting:", await yourContract.greeting());*/
 };
 
 export default deployYourContract;
